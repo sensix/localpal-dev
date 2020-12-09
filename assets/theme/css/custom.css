@@ -1,0 +1,275 @@
+/* override bootstrap e varie */
+
+.btn.focus, 
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(245, 0, 87, 0.5);
+}
+
+@media (max-width: 768px) {
+  .btn { 
+    padding : 0.25rem 0.5rem;
+  } 
+}
+
+.carousel-caption {
+    right: 15%;
+    bottom: 20%;
+    left: 15%;
+    z-index: 10;
+    padding: 3rem;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(245, 0, 87, 0.8);
+}
+
+@media (max-width: 768px) {
+  .carousel-caption { 
+    padding: 1rem;
+  } 
+}
+
+.carousel-indicators {
+
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: rgba(255,255,255,.5);
+  border: 1px solid #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.accordion .btn {
+  margin: 0.5rem 0;
+  justify-content: left;
+  background: #f50057;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-left: 2rem
+}
+
+.accordion .collapse-inner {
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  .btn {
+    font-size: 1rem !important;
+  }
+}
+
+.convenzioni .btn {
+  padding: 0.5em;
+  margin: 0;
+}
+
+.convenzioni .btn.btn-black-outline, 
+.convenzioni .btn.btn-black-outline:active {
+  border-color: #ccc;
+}
+
+.convenzioni .btn-black-outline:hover, 
+.convenzioni .btn-black-outline:focus, 
+.convenzioni .btn-black-outline.focus, 
+.convenzioni .btn-black-outline.active {
+    background-color: #fff;
+    border-color: #155979;
+}
+
+.convenzioni .btn img {
+  line-height: 0;
+}
+
+.convenzioni .btn:hover img {
+}
+
+.convenzioni img.dettaglio {
+  width: 220px;
+  margin: 10px;
+  float: left;
+}
+
+.carousel-item {
+  background-color: #444;
+}
+
+.carousel-item img {
+  visibility: hidden
+}
+
+.custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0;
+}
+
+.carousel-item.slider-fullscreen-image {
+  background-size: cover;
+}
+
+.carousel-control span {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 1rem;
+  border: 2px solid #fff;
+  border-radius: 4rem;
+  background-color: rgba(255,255,255,0.2);
+}
+
+@media (max-width: 768px) {
+  .carousel-control span { 
+    padding: 0.5rem;
+  } 
+}
+
+/* vari elementi grafici */
+
+@media (min-width: 768px) {
+  #sectionFormazione .card-box {
+    min-height: 16.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #sectionNews .card-box {
+    min-height: 9rem;
+  }
+}
+
+.modal-header h5 {
+  font-size: 200%;
+  margin-left: 15px;
+}
+
+/* mbr */
+
+.mbr-title {
+  color: #f50057;
+}
+
+a.text-white:hover, 
+a.text-white:focus {
+    color: #fff !important;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+}
+
+.btn-white-outline, 
+.btn-white-outline:active, 
+.btn-white-outline.active {
+  background-color: rgba(255,255,255,0.2);
+}
+
+
+
+.btn-black-outline, 
+.btn-black-outline:active {
+    background: none;
+    border-color: #155979;
+    color: #155979;
+}
+
+.btn-black-outline:hover, 
+.btn-black-outline:focus, 
+.btn-black-outline.focus, 
+.btn-black-outline.active {
+    color: #ffffff;
+    background-color: #155979;
+    border-color: #155979;
+}
+
+@media (max-width: 768px) {
+.display-1 {
+    font-size: 1.5rem !important
+  }
+}
+
+/* varie*/
+
+.navbar .text-white {
+  color: #ddd !important;
+}
+
+.navbar a.text-white:hover,
+.navbar a.text-white:focus {
+  color: #fff !important;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.section-eventi .card-wrapper {
+    padding-bottom: 2rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s;
+    text-align: center;
+    
+}
+
+.section-eventi .card-title {
+    padding: 0 2rem;
+}
+
+.section-eventi .card-box {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.section-formazione .card-box {
+  min-height: 16rem;
+}
+
+
+.social-list a {
+  color: #fff;
+}
+
+.social-list a:hover,
+.social-list a:focus {
+  opacity: 0.5;
+}
+
+/* menu footer */
+
+#sectionContatti .menu-privacy a:after {
+   content: "-";
+   padding-left: 0.25rem;
+}
+
+#sectionContatti .menu-privacy a:last-child:after {
+   content: "";
+}
+
+/* paginazione hugo */
+
+.post-navigation .older-posts {
+  display: inline-block; 
+  margin-left: 1rem;
+}
+
+.post-navigation a.older-posts {
+  color: #f50057;
+}
+
+
+/* allineamento checkbox */
+
+.modal-dialog .custom-checkbox input[type="checkbox"]{
+  position: relative;
+  left: -1.5rem;
+  top: 1.5rem;
+}
